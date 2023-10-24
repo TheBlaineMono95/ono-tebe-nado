@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 92px 49px 92px 41px;
+  padding: 92px 49px 96px 51px;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -29,14 +29,15 @@
   align-items: center;
   gap: 10px 33px;
   list-style: circle;
+  margin-top: 10px;
 }
 
-.header__link {
-   color: #000000;
+.header__link { 
+  color: #000000; 
 }
 
 .header__links-list-item_no-bullit {
-  list-style:none;
+  list-style: none;
 }
 
 .header__logo {
@@ -47,17 +48,20 @@
 }
 
 .header__logo-image {
-  width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
 .header__address {
   justify-self: end;
   max-width: 238px;
+  margin-top: 10px;
+  font-style: normal;
+  line-height: 25px;
 }
 
 .header__address-link {
-  line-height: 24.3px;
+  text-underline-offset: 24.3px;
 }
 
 /* Стили для текста с разными интервалами между буквами */
@@ -134,25 +138,26 @@
   color:#FFFFFF;
   font-weight: 400;
   font-size: 22px;
+  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 16px;
+  word-spacing: 18px;
 }
 
 /* Стили для кнопки ставки */
 
 .bet-button {
-      border: 0.06em solid;
-      padding: 12px 32px;
-      color:#fff;
-      font-family: Raleway, sans-serif;
-      font-weight: 400; 
-      font-size: 22px;
-      font-style: normal;
-      line-height: normal;
-      text-transform:uppercase;
-      background: transparent;
-      cursor: pointer;
+  border: 0.06em solid;
+  padding: 12px 32px;
+  color:#fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400; 
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  text-transform:uppercase;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* Стили для раздела с карточками */
@@ -291,7 +296,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 90px 50px 90px 50px;
+  padding: 100px 50px 90px 50px;
   text-underline-offset: 0.25em;
 }
 
@@ -307,7 +312,7 @@
 
 .footer__menu-list {
   display:flex;
-  flex-direction:column;
+  flex-direction: column;
   color: #000;
   font-family: Raleway, sans-serif;
   font-weight: 400;
@@ -315,12 +320,12 @@
   font-style: normal;
   line-height: normal;
   text-align: center;
-  list-style:none;
+  list-style: none;
 }
 
 .footer__social-list {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   width: 240px;
   height: 48px;
   list-style: none;
